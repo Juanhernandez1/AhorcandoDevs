@@ -1,0 +1,52 @@
+/* Provide sufficient contrast against white background */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+* {
+    font-family: 'Fredoka One', cursive;
+}
+
+.title-game {
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+}
+
+.full-screen{
+    width:100%;
+    height:100vh;
+}
+
+.btn-jugar {
+    width: 185px;
+    height: 60px;
+    font-size: xx-large;
+}
+
+.contenedor{
+    height: 75vh;
+}
+
+.Reset-W {
+  max-width: 100% !important;
+}
+
+.contenedor2 {
+    height: 50vh;
+}
+
+.input-w{
+    width: 50px;
+}
