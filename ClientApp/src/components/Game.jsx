@@ -57,7 +57,6 @@ const Game = () => {
         const arryFraseJuego = [];
 
         caracter.forEach(element => {
-            console.log(element)
             arryFraseJuego.push(typeof element !== "object" ? element : " ");
         })
 
@@ -68,7 +67,6 @@ const Game = () => {
 
     const generarInput = (data) => {
         console.log("generar input");
-        console.log(data.palabra.split(''));
         const datos = [];
         let contador = 0
         data.palabra.split('').forEach((element, index) => {
@@ -87,7 +85,7 @@ const Game = () => {
         const response = await fetch(`juego/${getRandom(1, cant)}`);
         console.log(response);
         const data = await response.json();
-        console.log(data);
+
         generarInput(data);
         setTimeout(() => {
             setActual(data);
