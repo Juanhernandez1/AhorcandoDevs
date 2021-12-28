@@ -81,7 +81,6 @@ const Game = () => {
 
     // fetch juego actual
     const fetchActual = async cant => {
-        console.log(cant);
         const response = await fetch(`juego/${getRandom(1, cant)}`);
         console.log(response);
         const data = await response.json();
@@ -187,7 +186,7 @@ const Game = () => {
         if (isFetch) {
             let cant = 0;
             const callback = (num) => {
-                cant = num;
+                cant = num === 0 ? 1 : num;
             }
             console.log("pidiendo cantidad");
             fetchCantida(callback);
