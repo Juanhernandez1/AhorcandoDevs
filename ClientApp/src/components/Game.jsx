@@ -186,7 +186,7 @@ const Game = () => {
         if (isFetch) {
             let cant = 0;
             const callback = (num) => {
-                cant = num === 0 ? 1 : num;
+                cant = num === 0 ? 8 : num;
             }
             console.log("pidiendo cantidad");
             fetchCantida(callback);
